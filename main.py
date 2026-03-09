@@ -1,45 +1,27 @@
-def soma(a, b):
-    return a + b
+print("Calculadora simples")
 
-def subtracao(a, b):
-    return a - b
+numero1 = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
 
-def multiplicacao(a, b):
-    return a * b
+print("Escolha a operação:")
+print("1 - Soma")
+print("2 - Subtração")
+print("3 - Multiplicação")
+print("4 - Divisão")
 
-def divisao(a, b):
-    if b == 0:
-        return "Erro: divisão por zero"
-    return a / b
+operacao = input("Digite o número da operação: ")
 
-print("Calculadora Simples")
+if operacao == "1":
+    resultado = numero1 + numero2
+elif operacao == "2":
+    resultado = numero1 - numero2
+elif operacao == "3":
+    resultado = numero1 * numero2
+elif operacao == "4":
+    resultado = numero1 / numero2
+else:
+    print("Operação inválida")
+    resultado = None
 
-a = float(input("Digite o primeiro número: "))
-b = float(input("Digite o segundo número: "))
-
-print("Soma:", soma(a, b))
-print("Subtração:", subtracao(a, b))
-print("Multiplicação:", multiplicacao(a, b))
-print("Divisão:", divisao(a, b))def soma(a, b):
-    return a + b
-
-def subtracao(a, b):
-    return a - b
-
-def multiplicacao(a, b):
-    return a * b
-
-def divisao(a, b):
-    if b == 0:
-        return "Erro: divisão por zero"
-    return a / b
-
-print("Calculadora Simples")
-
-a = float(input("Digite o primeiro número: "))
-b = float(input("Digite o segundo número: "))
-
-print("Soma:", soma(a, b))
-print("Subtração:", subtracao(a, b))
-print("Multiplicação:", multiplicacao(a, b))
-print("Divisão:", divisao(a, b))
+if resultado != None:
+    print("Resultado:", resultado)
