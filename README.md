@@ -29,4 +29,4 @@ python main.py --left 12 --right 4 --operation divide
 
 ## Author
 
-Douglas Aparecido Silva
+Becker
